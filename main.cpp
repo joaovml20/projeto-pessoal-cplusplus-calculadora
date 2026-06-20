@@ -5,7 +5,7 @@ int main(){
     int resposta;
     double numero1,numero2;
     do{
-        std::cout<<"bem-vindo a calculadora, agora escolhar a operacacao a ser realizada:\n0 para fechar a calculadora \n1 para somar \n2 para subtrair \n3 para dividir \n4 para multiplicar \n5 para calcular a raiz quadrada \n6 para calcular a potencia:\n";
+        std::cout<<"bem-vindo a calculadora, agora escolhar a operacacao a ser realizada:\n0 para fechar a calculadora \n1 para somar \n2 para subtrair \n3 para dividir \n4 para multiplicar \n5 para calcular a raiz quadrada \n6 para calcular a potencia \n7 para calcular a raiz cubica:\n";
         std::cin>>resposta;
         switch(resposta){
             case 0:
@@ -58,6 +58,11 @@ int main(){
                 std::cout<<"agora informe o segundo numero: ";
                 std::cin>>numero2;
                 std::cout<<"resultado da operacacao: "<<numero1<<" ^ "<<numero2<<" = "<<std::pow(numero1,numero2)<<std::endl;
+                break;
+            case 7:
+                std::cout<<"informe o numero para encontrar sua raiz cubica: ";
+                std::cin>>numero1;
+                std::cout<<"resultado da operacao: √"<<numero1<<" = "<<std::cbrt(numero1)<<std::endl;
                 break;
             default:
                 std::cout<<"opcao de operacao nao encontradar"<<std::endl;
